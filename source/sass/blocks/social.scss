@@ -1,0 +1,31 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social__item {
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+}
+
+.social__link {
+  padding: 5px;
+  color: $color-alice-blue-bg;
+
+  @include hover-focus {
+    color: $color-deep-sky-blue;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+}

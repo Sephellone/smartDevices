@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  background-color: $color-black-pearl;
+  color: $color-default-white;
+}
+
+.footer__wrapper {
+  max-width: $cw-desktop;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.footer__online-contacts {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    display: block;
+    width: 215px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
