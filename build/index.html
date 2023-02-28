@@ -16,7 +16,38 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          Я шапка
+          <div class="header__wrapper">
+            <a class="header__link header__logo" href="#">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+                <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
+              </picture>
+            </a>
+
+            <div class="header__contacts">
+              <p class="visually-hidden">Наши контакты</p>
+              <a class="header__contacts-link" href="mailto:info@sd.ru">
+                <svg class="header__contacts-icon" width="20" height="20">
+                  <use href="img/sprite.svg#icon-email"></use>
+                </svg>
+                <span class="visually-hidden">Написать нам на email.</span>
+                <span class="header__contacts-text">info@sd.ru</span>
+              </a>
+
+              <a class="header__contacts-link" href="tel:+74950005252">
+                <svg class="header__contacts-icon" width="20" height="20">
+                  <use href="img/sprite.svg#icon-phone"></use>
+                </svg>
+                <span class="visually-hidden">Позвонить нам.</span>
+                <span class="header__contacts-text">+7&nbsp;(495)&nbsp;000&nbsp;52&nbsp;52</span>
+              </a>
+            </div>
+            <!-- Обертка нужна для адекватного поведения при переполнении элементами -->
+            <div class="header__button-wrapper">
+              <a class="button header__button" href="#" data-open-modal="feedback">Заказать звонок</a>
+            </div>
+          </div>
+
         </div>
       </header>
       <main>

@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 3px;
+
+  font-family: $ff-Roboto-Condensed;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+}

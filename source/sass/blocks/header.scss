@@ -1,0 +1,175 @@
+.header {
+  position: fixed;
+  width: 100%;
+  min-height: 120px;
+  background: linear-gradient(180deg, $color-black-pearl 84.9%, rgba($color-black-pearl, 0) 100%);
+  color: $color-alice-blue-text;
+
+  @include vp-1023 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+  }
+
+  @include vp-767 {
+    min-height: 70px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: $cw-desktop;
+  margin: 0 auto;
+  padding-right: 60px;
+  padding-top: 30px;
+
+  @include vp-1023 {
+    max-width: none;
+    padding: 10px 25px 0 25px;
+  }
+
+  @include vp-767 {
+    padding: 0 20px 0 10px;
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 215px;
+  height: 55px;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @include vp-1023 {
+    padding-top: 10px;
+  }
+
+  @include vp-767 {
+    width: 55px;
+    padding-top: 15px;
+    padding-right: 20px;
+  }
+
+  @include hover-focus {
+    filter: drop-shadow(0 0 4px $color-deep-sky-blue);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+}
+
+.header__contacts {
+  box-sizing: border-box;
+  max-width: 480px;
+  width: 40%;
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 38px;
+
+  @include vp-1023 {
+    display: flex;
+    max-width: none;
+    gap: 0;
+    width: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+  }
+}
+
+.header__contacts-link {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-alice-blue-text;
+
+  @include vp-1023 {
+    margin-right: 18px;
+    padding: 20px 10px;
+  }
+
+  @include vp-767 {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @include hover-focus {
+    color: $color-deep-sky-blue;
+    outline: none;
+
+    svg {
+      color: $color-alice-blue-text;
+      filter: drop-shadow(0 0 2px $color-deep-sky-blue);
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+}
+
+.header__contacts-text {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.header__contacts-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-right: 15px;
+  color: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin: 0;
+  }
+}
+
+.header__button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 330px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.header__button {
+  min-width: 160px;
+  margin-top: 5px;
+  background-color: transparent;
+  color: $color-alice-blue-text;
+  border: 1px solid $color-alice-blue-text;
+  transition: $trans-default;
+  transition-property: background-color, border-color;
+
+  @include hover-focus {
+    background-color:  $color-deep-sky-blue;
+    border-color: $color-deep-sky-blue;
+  }
+}
