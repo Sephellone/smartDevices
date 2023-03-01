@@ -1,0 +1,22 @@
+.logo {
+  flex-shrink: 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @include hover-focus {
+    filter: drop-shadow(0 0 4px $color-deep-sky-blue);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+}

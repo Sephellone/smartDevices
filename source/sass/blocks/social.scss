@@ -1,18 +1,43 @@
+.social {
+  margin: 0;
+  padding: 0 10px;
+
+  @include vp-1023 {
+    padding: 0;
+    padding-bottom: 5px;
+  }
+}
+
 .social__list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-1023 {
+    justify-content: flex-end;
+  }
 }
 
 .social__item {
   margin: 0;
   margin-right: 15px;
   padding: 0;
+
+  @include vp-1023 {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  @include vp-767 {
+    margin-left: 5px;
+  }
 }
 
 .social__link {
+  display: block;
+  box-sizing: border-box;
   padding: 5px;
   color: $color-alice-blue-bg;
 
@@ -28,4 +53,14 @@
   @include active {
     opacity: 0.5;
   }
+
+  @include vp-767 {
+    padding: 10px;
+  }
+}
+
+.social__icon {
+  display: block;
+  margin: 0;
+  padding: 0;
 }

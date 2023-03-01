@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Smart Device - Печатные платы: производство и монтаж, поставка комплектующих, блоков и модулей.">
     <title>Smart Device</title>
     <link rel="icon" href="img/favicons/favicon.ico">
@@ -17,7 +17,7 @@
       <header class="header">
         <div class="container">
           <div class="header__wrapper">
-            <a class="header__link header__logo" href="#">
+            <a class="header__logo logo" href="#">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
                 <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
@@ -61,7 +61,9 @@
         <div class="container">
           <div class="footer__wrapper">
             <div class="footer__online-contacts">
-              <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
+              <a class="footer__logo logo" href="#">
+                <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
+              </a>
               <div class="footer__social social">
                 <h2 class="visually-hidden">Мы в соцсетях</h2>
                 <ul class="social__list">
@@ -93,61 +95,64 @@
               </div>
             </div>
 
-            <nav class="footer__nav nav">
+            <nav class="footer__nav footer__section nav">
               <div class="footer__title-wrapper">
                 <h2 class="footer__title">Разделы сайта</h2>
-                <button class="footer__accordeon-button">
+                <button class="footer__accordeon-button" data-accordeon-button="navigation">
                   <span class="visually-hidden">Раскрыть меню.</span>
                 </button>
               </div>
-              <div class="nav__list-wrapper"></div>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="#">О Компании</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Продукты</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Производство печатных плат</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Монтаж печатных плат</a>
-                </li>
-              </ul>
+              <div class="nav__list-wrapper" data-accordeon-element="navigation">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">О Компании</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Продукты</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Производство печатных плат</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Монтаж печатных плат</a>
+                  </li>
+                </ul>
 
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Комплектующие</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Доставка</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Контакты</a>
-                </li>
-              </ul>
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Комплектующие</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Доставка</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
 
-            <div class="footer__contacts">
+            <div class="footer__contacts footer__section">
               <div class="footer__title-wrapper">
                 <h2 class="footer__title">Наш офис</h2>
-                <button class="footer__accordeon-button">
+                <button class="footer__accordeon-button" data-accordeon-button="contacts">
                   <span class="visually-hidden">Раскрыть меню.</span>
                 </button>
               </div>
-              <address class="footer__address">г. Мытищи, Олимпийский проспект, д.10</address>
-              <ul class="footer__phone-list">
-                <li class="footer__phone-item">
-                  <a class="footer__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
-                </li>
-                <li class="footer__phone-item">
-                  <a class="footer__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
-                </li>
-                <li class="footer__phone-item">
-                  <a class="footer__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
-                </li>
-              </ul>
+              <div class="footer__contacts-wrapper" data-accordeon-element="contacts">
+                <address class="footer__address">г. Мытищи, Олимпийский проспект, д.10</address>
+                <ul class="footer__phone-list">
+                  <li class="footer__phone-item">
+                    <a class="footer__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="footer__phone-item">
+                    <a class="footer__phone" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="footer__phone-item">
+                    <a class="footer__phone" href="tel:+79253647813">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -155,9 +160,12 @@
     </div>
 
     <!-- Модалки -->
-    <!-- <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-    <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p> -->
-    <!-- <div class="modal modal--preload" data-modal="feedback">
+    <!--
+    <p>
+      <a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a>
+    </p>
+    <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+    <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">

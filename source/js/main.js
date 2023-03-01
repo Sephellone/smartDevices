@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initAccordeonButtons} from './modules/accordeon/accordeon';
 
 // ---------------------------------
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+initAccordeonButtons();
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
