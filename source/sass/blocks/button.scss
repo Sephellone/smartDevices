@@ -17,6 +17,9 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 
+  transition: $trans-default;
+  transition-property: border-color, background-color, color;
+
   cursor: pointer;
 
   &:active {
