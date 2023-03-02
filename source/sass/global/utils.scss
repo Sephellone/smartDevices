@@ -69,3 +69,14 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.section-wrapper {
+  max-width: $cw-desktop;
+  margin: 0 auto;
+}

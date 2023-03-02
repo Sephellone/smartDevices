@@ -11,8 +11,6 @@
 }
 
 .footer__wrapper {
-  max-width: $cw-desktop;
-  margin: 0 auto;
   padding: 50px 0;
   display: grid;
   grid-template-columns: 1fr 1.32fr 1fr;
@@ -110,7 +108,6 @@
 
     @include hover-focus {
       background-color: rgba($color-deep-sky-blue, 0.3);
-      outline: none;
     }
 
     &:active {
@@ -162,7 +159,7 @@
     [data-accordeon-element] {
       max-height: 0.1px;
       padding-bottom: 0;
-      transition: $trans-default;
+      transition: 0.5s ease-in-out;
       transition-property: max-height, padding-bottom;
     }
   }
@@ -223,7 +220,6 @@
 
   @include hover-focus {
     color: rgba($color-deep-sky-blue, 0.7);
-    outline: none;
   }
 
   &:active {

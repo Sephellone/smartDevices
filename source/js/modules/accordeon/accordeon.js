@@ -9,7 +9,7 @@ const onAccordeonButtonClick = (evt) => {
       element.setAttribute('style', 'max-height: 0.1px; padding-bottom: 0;');
     });
     if (!evt.currentTarget.classList.contains('is-open')) {
-      accordeonElement.setAttribute('style', 'max-height:1000px; padding-bottom: 13px;');
+      accordeonElement.setAttribute('style', 'max-height: 3000px; padding-bottom: 13px;');
       accordeonButtons.forEach((button) => {
         button.classList.remove('is-open');
       });

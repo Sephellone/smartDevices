@@ -23,8 +23,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: $cw-desktop;
-  margin: 0 auto;
   padding-right: 60px;
   padding-top: 30px;
 
@@ -96,7 +94,6 @@
 
   @include hover-focus {
     color: $color-deep-sky-blue;
-    outline: none;
 
     svg {
       color: $color-alice-blue-text;

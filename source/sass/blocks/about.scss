@@ -1,0 +1,140 @@
+.about__wrapper {
+  position: relative;
+  padding: 0 0 123px 250px;
+  color: $color-black-pearl;
+  overflow: hidden;
+
+  @include vp-1023 {
+    padding: 0 15px 79px 200px;
+  }
+
+  @include vp-767 {
+    padding: 0 9px 78px 9px;
+  }
+
+  &::before {
+    content: "2022";
+    position: absolute;
+    top: 52px;
+    left: -75px;
+    display: block;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 156.248px;
+    line-height: 220px;
+    letter-spacing: -0.01em;
+    color: transparent;
+    background-image: url("../img/2022-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: 19% 58%;
+    background-size: 488px 586px;
+    background-clip: text;
+
+    transform: rotate(-90deg);
+
+    @include retina {
+      background-image: url("../img/2022-bg-desktop@2x.jpg");
+    }
+
+    @include vp-1023 {
+      top: 60px;
+      left: -54px;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+    font-family: $ff-Roboto-Condensed;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+
+    @include vp-1023 {
+      margin-bottom: 5px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 0;
+      font-size: 28px;
+      line-height: 39px;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+    line-height: 22px;
+    overflow: hidden;
+
+    @include vp-1023 {
+      margin-top: 9px;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+    }
+
+    @include vp-767 {
+      margin-top: 11px;
+      margin-bottom: 0;
+      padding-bottom: 6px;
+      line-height: 19px;
+    }
+  }
+}
+
+.about__description {
+  overflow: hidden;
+}
+
+[data-about-accordion="mobile"] {
+  display: inline;
+
+  @include vp-767 {
+    display: none;
+
+    &.is-open {
+      display: inline;
+    }
+  }
+}
+
+[data-about-accordion="element"] {
+  max-height: 0;
+  transition: $trans-default;
+  transition-property: max-height;
+}
+
+.about__button {
+  min-width: 180px;
+  margin-top: 25px;
+  padding: 12px;
+  color: $color-deep-sky-blue;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid $color-deep-sky-blue;
+
+  @include hover-focus {
+    background-color: $color-deep-sky-blue;
+    color: $color-alice-blue-text;
+  }
+
+  @include vp-1023 {
+    padding-bottom: 13px;
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 0;
+    min-width: 160px;
+    padding: 7px 9px 11px 9px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

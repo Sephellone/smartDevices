@@ -9,7 +9,6 @@
 
   @include hover-focus {
     filter: drop-shadow(0 0 4px $color-deep-sky-blue);
-    outline: none;
   }
 
   &:active {

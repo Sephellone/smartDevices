@@ -10,14 +10,17 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
     <link rel="manifest" href="img/favicons/manifest.webmanifest">
+    <link rel="preload" href="/fonts/Roboto-Condensed-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Roboto-Condensed-Bold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/pt-mono.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <div class="container">
-          <div class="header__wrapper">
-            <a class="header__logo logo" href="#">
+          <div class="header__wrapper section-wrapper">
+            <a class="header__logo logo" href="index.html">
               <picture>
                 <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
                 <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
@@ -44,12 +47,13 @@
             </div>
             <!-- Обертка нужна для адекватного поведения при переполнении элементами -->
             <div class="header__button-wrapper">
-              <a class="button header__button" href="#" data-open-modal="feedback">Заказать звонок</a>
+              <a class="button header__button prevent-select" href="#" data-open-modal="feedback">Заказать звонок</a>
             </div>
           </div>
 
         </div>
       </header>
+
       <main>
         <h1 class="visually-hidden">Smart Device - производство и монтаж печатных плат</h1>
         <section class="intro">
@@ -64,20 +68,21 @@
             >
           </picture>
           <div class="container">
-            <div class="intro__wrapper">
+            <div class="intro__wrapper section-wrapper">
               <h2>Печатные платы</h2>
               <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="intro__link button" href="#">
+              <a class="intro__link button prevent-select" href="#">
                 <span class="intro__link-desktop">Получить бесплатную консультацию</span>
                 <span class="intro__link-mobile">Бесплатная консультация</span>
               </a>
             </div>
           </div>
         </section>
+
         <section class="advantages">
           <h2 class="visually-hidden">Наши приемущества</h2>
           <div class="container">
-            <div class="advantages__wrapper">
+            <div class="advantages__wrapper section-wrapper">
               <ul class="advantages__list">
 
                 <li class="advantages__item">
@@ -115,12 +120,105 @@
             </div>
           </div>
         </section>
+
+        <section class="about">
+          <div class="container">
+            <div class="about__wrapper section-wrapper" data-about-accordion="parent">
+              <h2>О компании</h2>
+              <div class="about__description">
+                <p>
+                  Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
+                </p>
+                <p>
+                  Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span data-about-accordion="mobile"> Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+                </p>
+                <div class="about__hidden-text" data-about-accordion="element">
+                  <p>
+                    Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
+                  </p>
+
+                  <p>
+                    Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов
+                  </p>
+                </div>
+              </div>
+              <button class="about__button button prevent-select" type="button" data-about-accordion="button">Подробнее</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="services">
+          <div class="container">
+            <div class="services__wrapper section-wrapper">
+              <h2>Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+              <h2 class="mobile-only">Товары и&nbsp;услуги Smart&nbsp;Device</h2>
+              <ul>
+                <li>
+                  <a class="service-card" href="#">
+                    <div class="service-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/services/services-1-bg-mobile.webp 1x, img/services/services-1-bg-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/services/services-1-bg-tablet.webp 1x, img/services/services-1-bg-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/services/services-1-bg-desktop.webp 1x, img/services/services-1-bg-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/services/services-1-bg-mobile.jpg 1x, img/services/services-1-bg-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/services/services-1-bg-tablet.jpg 1x, img/services/services-1-bg-tablet@2x.jpg 2x">
+                        <img src="img/services/services-1-bg-desktop.jpg" width="350" height="650" alt=""
+                        srcset="img/services/services-1-bg-desktop@2x.jpg 2x"
+                        >
+                      </picture>
+                    </div>
+                    <h3>Производство печатных плат</h3>
+
+                  </a>
+                </li>
+
+                <li class="services__item">
+                  <a class="service-card" href="#">
+                    <div class="service-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/services/services-2-bg-mobile.webp 1x, img/services/services-2-bg-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/services/services-2-bg-tablet.webp 1x, img/services/services-2-bg-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/services/services-2-bg-desktop.webp 1x, img/services/services-2-bg-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/services/services-2-bg-mobile.jpg 1x, img/services/services-2-bg-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/services/services-2-bg-tablet.jpg 1x, img/services/services-2-bg-tablet@2x.jpg 2x">
+                        <img src="img/services/services-2-bg-desktop.jpg" width="350" height="650" alt=""
+                        srcset="img/services/services-2-bg-desktop@2x.jpg 2x"
+                        >
+                      </picture>
+                    </div>
+                    <h3>Монтаж печатных плат</h3>
+                  </a>
+                </li>
+
+                <li class="services__item">
+                  <a class="service-card" href="#">
+                    <div class="service-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/services/services-3-bg-mobile.webp 1x, img/services/services-3-bg-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1023px)" srcset="img/services/services-3-bg-tablet.webp 1x, img/services/services-3-bg-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/services/services-3-bg-desktop.webp 1x, img/services/services-3-bg-desktop@2x.webp 2x">
+                        <source media="(max-width: 767px)" srcset="img/services/services-3-bg-mobile.jpg 1x, img/services/services-3-bg-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1023px)" srcset="img/services/services-3-bg-tablet.jpg 1x, img/services/services-3-bg-tablet@2x.jpg 2x">
+                        <img src="img/services/services-3-bg-desktop.jpg" width="350" height="650" alt=""
+                        srcset="img/services/services-3-bg-desktop@2x.jpg 2x"
+                        >
+                      </picture>
+                    </div>
+                    <h3>Комплектующие для&nbsp;светотехники</h3>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </section>
       </main>
+
       <footer class="footer">
         <div class="container">
-          <div class="footer__wrapper">
+          <div class="footer__wrapper section-wrapper">
             <div class="footer__online-contacts">
-              <a class="footer__logo logo" href="#">
+              <a class="footer__logo logo" href="index.html">
                 <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
               </a>
               <div class="footer__social social">

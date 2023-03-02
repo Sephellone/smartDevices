@@ -43,8 +43,6 @@
   position: relative;
   z-index: 2;
   box-sizing: border-box;
-  max-width: $cw-desktop;
-  margin: 0 auto;
   padding: 0 125px;
   padding-top: 300px;
   color: $color-alice-blue-text;
@@ -116,7 +114,6 @@
   @include hover-focus {
     background-color: $color-alice-blue-bg;
     color: $color-black-pearl;
-    outline: none;
   }
 
   @include vp-1023 {

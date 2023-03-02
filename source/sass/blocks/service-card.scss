@@ -1,0 +1,122 @@
+.service-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  color: $color-default-white;
+
+  &::before {
+    content: "";
+    position: relative;
+    z-index: 2;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    place-self: end end;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $color-deep-sky-blue;
+    border-radius: 3px 0px 0px 0px;
+
+    @include vp-767 {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    bottom: 26px;
+    right: 26px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid $color-default-white;
+    border-top: none;
+    border-left: none;
+    transform: rotate(315deg);
+
+    @include vp-767 {
+      width: 4px;
+      height: 4px;
+      bottom: 18px;
+      right: 17px;
+    }
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+
+    &::before {
+      background-color: $color-alice-blue-bg;
+    }
+
+    &::after {
+      border-color: $color-black-pearl;
+    }
+  }
+
+  @include active {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  h3 {
+    position: relative;
+    z-index: 2;
+    max-width: 190px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-left: 40px;
+    margin-top: 47px;
+
+    font-family: $ff-Roboto-Condensed;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    @include vp-1023 {
+      margin-left: 45px;
+      margin-top: 37px;
+    }
+
+    @include vp-767 {
+      max-width: 150px;
+      margin-left: 30px;
+      margin-top: 25px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+.service-card__image-wrapper {
+  position: relative;
+  z-index: 0;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  width: 100%;
+  height: auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-black-pearl, 0.5);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
