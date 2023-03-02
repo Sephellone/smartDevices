@@ -120,22 +120,9 @@
   }
 }
 
-.footer__title-wrapper {
-  margin-bottom: 22px;
-
-  @include vp-767 {
-    width: 100%;
-    margin-bottom: 0;
-    padding-right: 5px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
 .footer__title {
   margin: 0;
+  margin-bottom: 22px;
   padding: 0;
   font-family: $ff-Roboto-Condensed;
   font-weight: 400;
@@ -143,13 +130,85 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  &--mobile {
+    display: none;
+  }
+
+  @include vp-767 {
+    display: none;
+
+    &.footer__title--mobile {
+      display: block;
+    }
+  }
+}
+
+.footer__title--mobile {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+  min-height: 58px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+
+  @include hover-focus {
+    color: $color-deep-sky-blue;
+
+    &::before,
+    &::after {
+      background-color: $color-deep-sky-blue;
+    }
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.5;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: $color-silver;
+
+    transition-property: transform;
+    transition: $trans-default;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+
+  &.is-open {
+    &::after {
+      transform: rotate(810deg);
+    }
+  }
+}
+
+.is-active .footer__title--mobile {
+  &::after {
+    transform: rotate(0);
+  }
 }
 
 .footer__section {
   @include vp-767 {
     width: 100%;
-    padding: 0;
-    padding-left: 25px;
+    padding: 0 25px;
     border-bottom: 1px solid rgba($color-alice-blue-bg, 0.7);
 
     &:first-of-type {
@@ -180,12 +239,16 @@
     padding-left: 5px;
     overflow: hidden;
   }
+
+  @include vp-767 {
+    padding: 0 25px;
+    overflow: hidden;
+  }
 }
 
 .footer__contacts-wrapper {
   @include vp-767 {
     box-sizing: border-box;
-    padding-bottom: 13px;
   }
 }
 
@@ -206,6 +269,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-767 {
+    margin-bottom: 15px;
+  }
 }
 
 .footer__phone-item {
