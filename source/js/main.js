@@ -1,8 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initAccordeonButtons} from './modules/accordeon/accordeon';
-import {initAboutAccordeon} from './modules/accordeon/about-accordeon';
+// import {initAccordeonButtons} from './modules/accordeon/accordeon';
+// import {initAboutAccordeon} from './modules/accordeon/about-accordeon';
+import {initAccordions} from './modules/liga-accordions/init-accordion';
+
 
 // ---------------------------------
 
@@ -23,8 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    initAboutAccordeon();
-    initAccordeonButtons();
+    initAccordions();
+    // initAboutAccordeon();
+    // initAccordeonButtons();
   });
 });
 

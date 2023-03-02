@@ -10,10 +10,10 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
     <link rel="manifest" href="img/favicons/manifest.webmanifest">
-    <link rel="preload" href="/fonts/Roboto-Condensed-Regular.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/Roboto-Condensed-Bold.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="/fonts/pt-mono.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt-mono.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -123,16 +123,16 @@
 
         <section class="about">
           <div class="container">
-            <div class="about__wrapper section-wrapper" data-about-accordion="parent">
+            <div class="about__wrapper section-wrapper" data-accordion="parent">
               <h2>О компании</h2>
-              <div class="about__description">
+              <div class="about__description" data-accordion="element">
                 <p>
                   Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
                 </p>
                 <p>
                   Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span data-about-accordion="mobile"> Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
                 </p>
-                <div class="about__hidden-text" data-about-accordion="element">
+                <div data-accordion="content">
                   <p>
                     Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
                   </p>
@@ -141,8 +141,9 @@
                     Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов
                   </p>
                 </div>
+                <button class="about__button button prevent-select" type="button" data-accordion="button">Подробнее</button>
               </div>
-              <button class="about__button button prevent-select" type="button" data-about-accordion="button">Подробнее</button>
+
             </div>
           </div>
         </section>

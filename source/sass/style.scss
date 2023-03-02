@@ -18,11 +18,9 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
 @import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/accordion.scss";
+@import "blocks/data-accordion.scss";
 @import "blocks/button.scss";
 @import "blocks/logo.scss";
 @import "blocks/header.scss";

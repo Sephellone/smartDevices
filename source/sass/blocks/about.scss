@@ -5,11 +5,11 @@
   overflow: hidden;
 
   @include vp-1023 {
-    padding: 0 15px 79px 200px;
+    padding: 0 15px 81px 200px;
   }
 
   @include vp-767 {
-    padding: 0 9px 78px 9px;
+    padding: 0 9px 79px 9px;
   }
 
   &::before {
@@ -91,6 +91,12 @@
 
 .about__description {
   overflow: hidden;
+
+  &.is-active {
+    [data-about-accordion="mobile"] {
+      display: inline;
+    }
+  }
 }
 
 [data-about-accordion="mobile"] {
@@ -98,17 +104,7 @@
 
   @include vp-767 {
     display: none;
-
-    &.is-open {
-      display: inline;
-    }
   }
-}
-
-[data-about-accordion="element"] {
-  max-height: 0;
-  transition: $trans-default;
-  transition-property: max-height;
 }
 
 .about__button {
@@ -127,11 +123,11 @@
 
   @include vp-1023 {
     padding-bottom: 13px;
-    margin-top: 0;
+    margin-top: 7px;
   }
 
   @include vp-767 {
-    margin-top: 0;
+    margin-top: 10px;
     min-width: 160px;
     padding: 7px 9px 11px 9px;
     font-size: 14px;

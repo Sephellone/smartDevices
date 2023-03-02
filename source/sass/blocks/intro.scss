@@ -3,11 +3,14 @@
   overflow: hidden;
   box-sizing: border-box;
   min-height: 880px;
+  // отрицательный марджин для взаимодействия со стики-шапкой
+  margin-top: -120px;
   padding: 0;
   padding-bottom: 20px;
   background-color: $color-black-pearl;
 
   @include vp-1023 {
+    margin-top: 0;
     min-height: 640px;
   }
 
