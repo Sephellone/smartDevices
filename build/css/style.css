@@ -2278,6 +2278,7 @@ button,
 
   .form::before {
     display: none;
+    background-color: transparent;
   }
 
   .form__wrapper {
