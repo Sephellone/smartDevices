@@ -71,8 +71,10 @@
 }
 
 .prevent-select {
+  /* stylelint-disable */
   -webkit-user-select: none;
   -ms-user-select: none;
+   /* stylelint-enable */
   user-select: none;
 }
 

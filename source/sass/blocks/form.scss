@@ -126,6 +126,7 @@
 
     @include hover-focus {
       cursor: text;
+
       & input:not([type="checkbox"]),
       & textarea {
         border: none;
@@ -157,7 +158,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 15px;
-    font-family: 'PT Mono';
+    font-family: $ff-PT-Mono;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -332,6 +333,7 @@
     @include hover-focus {
       cursor: pointer;
       color: $color-default-white;
+
       span:first-of-type {
         background-color: rgba($color-black-pearl, 0.15);
       }
