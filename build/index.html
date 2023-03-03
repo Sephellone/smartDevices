@@ -357,6 +357,55 @@
       </footer>
     </div>
 
+    <!-- Модалка -->
+    <div class="modal modal--preload modal--fit-content" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content form form--modal">
+          <div class="form__wrapper form__wrapper--modal">
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <h2>Закажите звонок</h2>
+              <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
+
+              <div class="form__inputs-wrapper form__inputs-wrapper--modal">
+                <label>
+                  <input type="text" name="name" id="modal-name" placeholder="Имя" minlength="1" required>
+                  <span>Имя</span>
+                </label>
+
+                <label>
+                  <input type="tel" name="phone" id="modal-phone" placeholder="Телефон" required>
+                  <span>Телефон</span>
+                </label>
+
+                <div class="form__wide-input-wrapper form__wide-input-wrapper--modal">
+                  <label>
+                    <textarea name="question" id="modal-question" placeholder="Ваш вопрос"></textarea>
+                    <span>Ваш вопрос</span>
+                  </label>
+                </div>
+
+                <div class="form__personal-checkbox-wrapper form__personal-checkbox-wrapper--modal">
+                  <label>
+                    <input type="checkbox" name="personal-data" required checked>
+                    <span class="form__checkbox-mark"></span>
+                    <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                  </label>
+                </div>
+
+                <button class="button form__button form__button--modal" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <!-- Модалки -->
     <!--
     <p>
