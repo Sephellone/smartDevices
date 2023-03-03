@@ -71,7 +71,7 @@
             <div class="intro__wrapper section-wrapper">
               <h2>Печатные платы</h2>
               <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="intro__link button prevent-select" href="#">
+              <a class="intro__link button prevent-select" href="#form-section">
                 <span class="intro__link-desktop">Получить бесплатную консультацию</span>
                 <span class="intro__link-mobile">Бесплатная консультация</span>
               </a>
@@ -210,6 +210,54 @@
                 </li>
               </ul>
 
+            </div>
+          </div>
+        </section>
+
+        <section class="form" id="form-section">
+          <div class="container">
+            <div class="form__wrapper section-wrapper">
+              <div class="form__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x">
+                  <img src="img/paper-airplane.png" width="510" height="285" alt=""
+                  srcset="img/paper-airplane@2x.png 2x">
+                </picture>
+              </div>
+
+              <form action="https://echo.htmlacademy.ru/" method="get">
+                <h2>Остались вопросы? Задайте их нам!</h2>
+                <p>Мы проконсультируем Вас бесплатно</p>
+
+                <div class="form__inputs-wrapper">
+                  <label>
+                    <input type="text" name="name" id="name" placeholder="Имя" minlength="1" required>
+                    <span>Имя</span>
+                  </label>
+
+                  <label>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                    <span>Телефон</span>
+                  </label>
+
+                  <div class="form__wide-input-wrapper">
+                    <label>
+                      <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+                      <span>Ваш вопрос</span>
+                    </label>
+                  </div>
+
+                  <div class="form__personal-checkbox-wrapper">
+                    <label>
+                      <input type="checkbox" name="personal-data" required checked>
+                      <span class="form__checkbox-mark"></span>
+                      <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                    </label>
+                  </div>
+
+                  <button class="button form__button" type="submit">Задать вопрос</button>
+                </div>
+              </form>
             </div>
           </div>
         </section>
