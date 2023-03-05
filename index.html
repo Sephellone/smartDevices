@@ -150,7 +150,7 @@
               <h2>Smart Device предлагает следующие товары и&nbsp;услуги</h2>
               <h2 class="mobile-only">Товары и&nbsp;услуги Smart&nbsp;Device</h2>
               <ul>
-                <li>
+                <li class="services__item">
                   <a class="service-card" href="#">
                     <div class="service-card__image-wrapper">
                       <picture>
@@ -165,7 +165,7 @@
                   </a>
                 </li>
 
-                <li>
+                <li class="services__item">
                   <a class="service-card" href="#">
                     <div class="service-card__image-wrapper">
                       <picture>
@@ -179,7 +179,7 @@
                   </a>
                 </li>
 
-                <li>
+                <li class="services__item">
                   <a class="service-card" href="#">
                     <div class="service-card__image-wrapper">
                       <picture>
@@ -286,10 +286,9 @@
             </div>
 
             <nav class="footer__nav footer__section nav" data-accordion="element">
-              <h2 class="footer__title">Разделы сайта</h2>
-              <button class="footer__title footer__title--mobile" type="button" data-accordion="button">Разделы сайта</button>
-              <div class="nav__list-wrapper"  data-accordion="content">
-                <ul class="nav__list">
+              <h2 class="footer__title" data-accordion="button" tabindex="0">Разделы сайта</h2>
+              <div data-accordion="content">
+                <ul class="nav__list" >
                   <li class="nav__item">
                     <a class="nav__link" href="#">О Компании</a>
                   </li>
@@ -302,9 +301,6 @@
                   <li class="nav__item">
                     <a class="nav__link" href="#">Монтаж печатных плат</a>
                   </li>
-                </ul>
-
-                <ul class="nav__list">
                   <li class="nav__item">
                     <a class="nav__link" href="#">Комплектующие</a>
                   </li>
@@ -319,8 +315,7 @@
             </nav>
 
             <div class="footer__contacts footer__section" data-accordion="element">
-                <h2 class="footer__title">Наш офис</h2>
-                <button class="footer__title footer__title--mobile" type="button" data-accordion="button">Наш офис</button>
+                <h2 class="footer__title" data-accordion="button">Наш офис</h2>
               <div class="footer__contacts-wrapper"  data-accordion="content">
                 <address class="footer__address">г. Мытищи, Олимпийский проспект, д.10</address>
                 <ul class="footer__phone-list">
@@ -353,7 +348,7 @@
 
               <div class="form__inputs-wrapper form__inputs-wrapper--modal">
                 <label>
-                  <input type="text" name="name" id="modal-name" placeholder="Имя" minlength="1" required>
+                  <input type="text" name="name" id="modal-name" placeholder="Имя" minlength="1" required autofocus>
                   <span>Имя</span>
                 </label>
 
@@ -389,40 +384,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Модалки -->
-    <!--
-    <p>
-      <a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a>
-    </p>
-    <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
