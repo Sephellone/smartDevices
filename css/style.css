@@ -437,7 +437,6 @@ html {
 
 body {
   width: 100%;
-  min-width: 320px;
   height: 100%;
   background-color: #f8fdff;
 }
@@ -1546,6 +1545,27 @@ button,
   padding: 0;
 }
 
+.services__wrapper li:nth-of-type(3n-2) img {
+  -o-object-fit: none;
+  object-fit: none;
+  -o-object-position: 16.5% 69.5%;
+  object-position: 16.5% 69.5%;
+}
+
+.services__wrapper li:nth-of-type(3n-1) img {
+  -o-object-fit: none;
+  object-fit: none;
+  -o-object-position: 46.5% 71%;
+  object-position: 46.5% 71%;
+}
+
+.services__wrapper li:nth-of-type(3n) img {
+  -o-object-fit: none;
+  object-fit: none;
+  -o-object-position: 78% 66%;
+  object-position: 78% 66%;
+}
+
 .service-card {
   position: relative;
   display: -ms-grid;
@@ -1642,7 +1662,7 @@ button,
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   width: 100%;
-  height: auto;
+  aspect-ratio: 350/650;
 }
 
 .service-card__image-wrapper::after {
@@ -1659,7 +1679,7 @@ button,
 .service-card__image-wrapper img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .form {
@@ -2182,6 +2202,11 @@ button,
     min-height: 640px;
   }
 
+  .intro img {
+    -o-object-position: 20% 0;
+    object-position: 20% 0;
+  }
+
   .intro__wrapper {
     padding: 0 25px;
     padding-top: 178px;
@@ -2271,9 +2296,28 @@ button,
     row-gap: 29px;
   }
 
+  .services__wrapper li:nth-of-type(3n-2) img {
+    -o-object-position: 29.5% 97%;
+    object-position: 29.5% 97%;
+  }
+
+  .services__wrapper li:nth-of-type(3n-1) img {
+    -o-object-position: 76% 55.5%;
+    object-position: 76% 55.5%;
+  }
+
+  .services__wrapper li:nth-of-type(3n) img {
+    -o-object-position: 18% 63%;
+    object-position: 18% 63%;
+  }
+
   .service-card h3 {
     margin-left: 45px;
     margin-top: 37px;
+  }
+
+  .service-card__image-wrapper {
+    aspect-ratio: 670/250;
   }
 
   .form::before {
@@ -2521,6 +2565,11 @@ button,
     min-height: 560px;
   }
 
+  .intro img {
+    -o-object-position: 25.5% 0;
+    object-position: 25.5% 0;
+  }
+
   .intro__wrapper {
     padding: 0 9px;
     padding-top: 148px;
@@ -2643,6 +2692,21 @@ button,
     row-gap: 30px;
   }
 
+  .services__wrapper li:nth-of-type(3n-2) img {
+    -o-object-position: 30.7% 52.5%;
+    object-position: 30.7% 52.5%;
+  }
+
+  .services__wrapper li:nth-of-type(3n-1) img {
+    -o-object-position: 30% 94.5%;
+    object-position: 30% 94.5%;
+  }
+
+  .services__wrapper li:nth-of-type(3n) img {
+    -o-object-position: 72.2% 69.5%;
+    object-position: 72.2% 69.5%;
+  }
+
   .service-card::before {
     width: 40px;
     height: 40px;
@@ -2661,6 +2725,10 @@ button,
     margin-top: 25px;
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .service-card__image-wrapper {
+    aspect-ratio: 270/250;
   }
 
   .form__wrapper {
