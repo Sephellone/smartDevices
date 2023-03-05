@@ -1479,6 +1479,12 @@ button,
   padding: 0;
 }
 
+.services__item {
+  -ms-grid-row-align: stretch;
+  -ms-grid-column-align: stretch;
+  place-self: stretch;
+}
+
 .services__item:nth-of-type(3n-2) img {
   -o-object-fit: none;
   object-fit: none;
@@ -1502,6 +1508,7 @@ button,
 
 .service-card {
   position: relative;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -1509,6 +1516,7 @@ button,
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   color: #ffffff;
+  background-color: #041827;
 }
 
 .service-card::before {
@@ -2378,6 +2386,7 @@ button,
   .footer__title {
     position: relative;
     min-height: 58px;
+    padding-right: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
