@@ -1386,6 +1386,7 @@ button,
   background-size: 488px 586px;
   -webkit-background-clip: text;
   background-clip: text;
+  overflow: hidden;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
