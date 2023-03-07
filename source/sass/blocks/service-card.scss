@@ -5,7 +5,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   color: $color-default-white;
-  background-color: $color-black-pearl;
+  background-color: $color-dark-cerulean;
 
   &::before {
     content: "";
@@ -95,6 +95,52 @@
       line-height: 30px;
     }
   }
+
+
+  &--production {
+    img {
+      object-fit: none;
+      object-position: 16.5% 69.5%;
+
+      @include vp-1023 {
+        object-position: 29.5% 97%;
+      }
+
+      @include vp-767 {
+        object-position: 30.7% 52.5%;
+      }
+    }
+  }
+
+  &--assembly {
+    img {
+      object-fit: none;
+      object-position: 46.5% 71%;
+
+      @include vp-1023 {
+        object-position: 76% 55.5%;
+      }
+
+      @include vp-767 {
+        object-position: 30% 94.5%;
+      }
+    }
+  }
+
+  &--components {
+    img {
+      object-fit: none;
+      object-position: 78% 66%;
+
+      @include vp-1023 {
+        object-position: 18% 63%;
+      }
+
+      @include vp-767 {
+        object-position: 72.2% 69.5%;
+      }
+    }
+  }
 }
 
 .service-card__image-wrapper {
@@ -106,7 +152,7 @@
   aspect-ratio: 350 / 650;
 
   @include vp-1023 {
-    aspect-ratio: 670 / 250;
+    aspect-ratio: 670 / 251;
   }
 
   @include vp-767 {

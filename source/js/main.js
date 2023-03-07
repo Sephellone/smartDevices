@@ -4,6 +4,7 @@ import {initAccordions} from './modules/liga-accordions/init-accordion';
 import {initAboutButton} from './modules/liga-accordions/about-accordion-button';
 import {initPhoneMask} from './modules/liga-phone-mask/phone-mask';
 import {initModalFocus} from './modules/modals/modal-focus';
+import {initJsElements} from './utils/no-js';
 
 
 // ---------------------------------
@@ -21,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    initJsElements();
     initModalFocus();
     initModals();
     initAboutButton();

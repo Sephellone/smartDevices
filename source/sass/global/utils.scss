@@ -78,7 +78,6 @@
   user-select: none;
 }
 
-.section-wrapper {
-  max-width: $cw-desktop;
-  margin: 0 auto;
+[data-accordion="content"].no-js {
+  max-height: 100%;
 }

@@ -2,6 +2,9 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/accordion.scss";
+@import "vendor/data-accordion.scss";
+
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -19,7 +22,6 @@
 // ---------------------------------
 
 @import "blocks/modal";
-@import "blocks/data-accordion.scss";
 @import "blocks/button.scss";
 @import "blocks/logo.scss";
 @import "blocks/header.scss";

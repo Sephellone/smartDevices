@@ -1,7 +1,10 @@
 .form {
   position: relative;
   width: 100%;
+  padding-top: 163px;
+  padding-bottom: 249px;
   background-color: $color-deep-sky-blue;
+  color: $color-default-white;
   overflow: hidden;
   scroll-margin-top: 110px;
 
@@ -20,42 +23,16 @@
   }
 
   @include vp-1023 {
+    padding: 45px 0 124px 0;
+
     &::before {
       display: none;
       background-color: transparent;
     }
   }
 
-  &--modal {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    border-radius: 3px;
-    color: $color-default-white;
-    transform: translateX(-9px);
-
-    &::before {
-      display: none;
-    }
-  }
-}
-
-.form__wrapper {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  padding-top: 163px;
-  padding-bottom: 249px;
-  color: $color-default-white;
-
-  @include vp-1023 {
-    display: block;
-    padding: 45px 24px 124px 24px;
-  }
-
   @include vp-767 {
-    padding: 46px 9px 88px 9px;
+    padding: 46px 0 88px 0;
   }
 
   h2 {
@@ -104,9 +81,16 @@
   }
 
   &--modal {
-    display: block;
-    width: 500px;
-    padding: 37px 40px 45px 40px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    color: $color-default-white;
+    transform: translateX(-9px);
+
+    &::before {
+      display: none;
+    }
 
     h2 {
       margin-bottom: 5px;
@@ -123,6 +107,23 @@
       max-width: 420px;
       padding: 0;
     }
+  }
+}
+
+.form__container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+
+  @include vp-1023 {
+    display: block;
+  }
+
+  &--modal {
+    display: block;
+    width: 500px;
+    padding: 37px 40px 45px 40px;
   }
 }
 

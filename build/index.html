@@ -12,66 +12,66 @@
     <link rel="manifest" href="img/favicons/manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff" type="font/woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff" type="font/woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/pt-mono.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/pt-mono.woff" type="font/woff" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container">
-          <div class="header__wrapper section-wrapper">
-            <a class="header__logo logo" href="index.html">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-                <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
-              </picture>
+        <div class="container header__container">
+          <a class="header__logo logo" href="index.html">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+              <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
+            </picture>
+          </a>
+
+          <div class="header__contacts">
+            <p class="visually-hidden">Наши контакты</p>
+            <a class="header__contacts-link" href="mailto:info@sd.ru">
+              <svg class="header__contacts-icon" width="20" height="20">
+                <use href="img/sprite.svg#icon-email"></use>
+              </svg>
+              <span class="visually-hidden">Написать нам на email.</span>
+              <span class="header__contacts-text">info@sd.ru</span>
             </a>
 
-            <div class="header__contacts">
-              <p class="visually-hidden">Наши контакты</p>
-              <a class="header__contacts-link" href="mailto:info@sd.ru">
-                <svg class="header__contacts-icon" width="20" height="20">
-                  <use href="img/sprite.svg#icon-email"></use>
-                </svg>
-                <span class="visually-hidden">Написать нам на email.</span>
-                <span class="header__contacts-text">info@sd.ru</span>
-              </a>
-
-              <a class="header__contacts-link" href="tel:+74950005252">
-                <svg class="header__contacts-icon" width="20" height="20">
-                  <use href="img/sprite.svg#icon-phone"></use>
-                </svg>
-                <span class="visually-hidden">Позвонить нам.</span>
-                <span class="header__contacts-text">+7&nbsp;(495)&nbsp;000&nbsp;52&nbsp;52</span>
-              </a>
-            </div>
-            <!-- Обертка нужна для адекватного поведения при переполнении элементами -->
-            <div class="header__button-wrapper">
-              <a class="button header__button prevent-select" href="#" data-open-modal="feedback">Заказать звонок</a>
-            </div>
+            <a class="header__contacts-link" href="tel:+74950005252">
+              <svg class="header__contacts-icon" width="20" height="20">
+                <use href="img/sprite.svg#icon-phone"></use>
+              </svg>
+              <span class="visually-hidden">Позвонить нам.</span>
+              <span class="header__contacts-text">+7&nbsp;(495)&nbsp;000&nbsp;52&nbsp;52</span>
+            </a>
+          </div>
+          <!-- Обертка нужна для адекватного поведения при переполнении элементами -->
+          <div class="header__button-wrapper">
+            <a class="button header__button prevent-select" href="#" data-open-modal="feedback">Заказать звонок</a>
           </div>
 
         </div>
       </header>
+
 
       <main>
         <h1 class="visually-hidden">Smart Device - производство и монтаж печатных плат</h1>
         <section class="intro">
           <picture>
             <source type="image/webp" srcset="img/main-screen-bg-desktop.webp 1x, img/main-screen-bg-desktop@2x.webp 2x">
-            <img src="img/main-screen-bg-desktop.jpg" width="1920" height="880" alt=""
+            <img src="img/main-screen-bg-desktop.jpg" width="1920" height="880" alt="Фрагмент готовой платы с SMD."
               srcset="img/main-screen-bg-desktop@2x.jpg 2x"
             >
           </picture>
-          <div class="container">
-            <div class="intro__wrapper section-wrapper">
-              <h2>Печатные платы</h2>
-              <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="intro__link button prevent-select" href="#form-section">
-                <span class="intro__link-desktop">Получить бесплатную консультацию</span>
-                <span class="intro__link-mobile">Бесплатная консультация</span>
-              </a>
-            </div>
+          <div class="container intro__container">
+            <h2>Печатные платы</h2>
+            <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
+            <a class="intro__link button prevent-select" href="#form-section">
+              <span class="intro__link-desktop">Получить бесплатную консультацию</span>
+              <span class="intro__link-mobile">Бесплатная консультация</span>
+            </a>
           </div>
         </section>
 
@@ -118,138 +118,133 @@
         </section>
 
         <section class="about">
-          <div class="container">
-            <div class="about__wrapper section-wrapper" data-accordion="parent" data-about-accordion>
-              <h2>О компании</h2>
-              <div class="about__description" data-accordion="element">
+          <div class="container about__container" data-accordion="parent" data-about-accordion>
+            <h2>О компании</h2>
+            <div class="about__description" data-accordion="element">
+              <p>
+                Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
+              </p>
+              <p>
+                Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span data-about-accordion="mobile"> Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
+              </p>
+              <div class="no-js" data-accordion="content">
                 <p>
-                  Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.
+                  Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
                 </p>
-                <p>
-                  Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span data-about-accordion="mobile"> Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
-                </p>
-                <div data-accordion="content">
-                  <p>
-                    Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
-                  </p>
 
-                  <p>
-                    Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов
-                  </p>
-                </div>
-                <button class="about__button button prevent-select" type="button" data-accordion="button">Подробнее</button>
+                <p>
+                  Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов
+                </p>
               </div>
-
+              <button class="about__button button prevent-select" type="button" data-accordion="button">Подробнее</button>
             </div>
           </div>
         </section>
 
         <section class="services">
           <div class="container">
-            <div class="services__wrapper section-wrapper">
-              <h2>Smart Device предлагает следующие товары и&nbsp;услуги</h2>
-              <h2 class="mobile-only">Товары и&nbsp;услуги Smart&nbsp;Device</h2>
-              <ul>
-                <li class="services__item">
-                  <a class="service-card" href="#">
-                    <div class="service-card__image-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/services-bg.webp 1x, img/services-bg@2x.webp 2x">
-                        <img src="img/services-bg.jpg" width="350" height="650" alt=""
-                        srcset="img/services-bg@2x.jpg 2x"
-                        >
-                      </picture>
-                    </div>
-                    <h3>Производство печатных плат</h3>
+            <h2>
+              <span>Smart Device предлагает следующие товары и&nbsp;услуги</span>
+              <span class="mobile-only">Товары и&nbsp;услуги Smart&nbsp;Device</span>
+            </h2>
+            <ul>
+              <li class="services__item">
+                <a class="service-card service-card--production" href="#">
+                  <div class="service-card__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/services-bg.webp 1x, img/services-bg@2x.webp 2x">
+                      <img src="img/services-bg.jpg" width="350" height="650" alt="Фрагмент готовой платы  с SMD компонентами. На переднем плане - катушка индуктивности, транзистор и электролитический конденсатор, на заднем плане - фрагмент сокета процессора."
+                      srcset="img/services-bg@2x.jpg 2x"
+                      >
+                    </picture>
+                  </div>
+                  <h3>Производство печатных плат</h3>
 
-                  </a>
-                </li>
+                </a>
+              </li>
 
-                <li class="services__item">
-                  <a class="service-card" href="#">
-                    <div class="service-card__image-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/services-bg.webp 1x, img/services-bg@2x.webp 2x">
-                        <img src="img/services-bg.jpg" width="350" height="650" alt=""
-                        srcset="img/services-bg@2x.jpg 2x"
-                        >
-                      </picture>
-                    </div>
-                    <h3>Монтаж печатных плат</h3>
-                  </a>
-                </li>
+              <li class="services__item">
+                <a class="service-card service-card--assembly" href="#">
+                  <div class="service-card__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/services-bg.webp 1x, img/services-bg@2x.webp 2x">
+                      <img src="img/services-bg.jpg" width="350" height="650" alt="Фрагмент готовой платы с SMD компонентами. На переднем плане - транзистор и электролитические конденсаторы, на заднем плане - сокет процессора."
+                      srcset="img/services-bg@2x.jpg 2x"
+                      >
+                    </picture>
+                  </div>
+                  <h3>Монтаж печатных плат</h3>
+                </a>
+              </li>
 
-                <li class="services__item">
-                  <a class="service-card" href="#">
-                    <div class="service-card__image-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/services-bg.webp 1x, img/services-bg@2x.webp 2x">
-                        <img src="img/services-bg.jpg" width="350" height="650" alt=""
-                        srcset="img/services-bg@2x.jpg 2x"
-                        >
-                      </picture>
-                    </div>
-                    <h3>Комплектующие для&nbsp;светотехники</h3>
-                  </a>
-                </li>
-              </ul>
-
-            </div>
+              <li class="services__item">
+                <a class="service-card service-card--components" href="#">
+                  <div class="service-card__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="img/services-bg.webp 1x, img/services-bg@2x.webp 2x">
+                      <img src="img/services-bg.jpg" width="350" height="650" alt="Фрагмент готовой платы с SMD компонентами. Несколько катушек индуктивности, конденсаторов и транзисторов."
+                      srcset="img/services-bg@2x.jpg 2x"
+                      >
+                    </picture>
+                  </div>
+                  <h3>Комплектующие для&nbsp;светотехники</h3>
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
 
         <section class="form" id="form-section">
-          <div class="container">
-            <div class="form__wrapper section-wrapper">
-              <div class="form__image-wrapper">
-                <picture>
-                  <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x">
-                  <img src="img/paper-airplane.png" width="510" height="285" alt=""
-                  srcset="img/paper-airplane@2x.png 2x">
-                </picture>
-              </div>
-
-              <form action="https://echo.htmlacademy.ru/" method="get">
-                <h2>Остались вопросы? Задайте их нам!</h2>
-                <p>Мы проконсультируем Вас бесплатно</p>
-
-                <div class="form__inputs-wrapper">
-                  <label>
-                    <input type="text" name="name" id="name" placeholder="Имя" minlength="1" required>
-                    <span>Имя</span>
-                  </label>
-
-                  <label>
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-                    <span>Телефон</span>
-                  </label>
-
-                  <div class="form__wide-input-wrapper">
-                    <label>
-                      <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
-                      <span>Ваш вопрос</span>
-                    </label>
-                  </div>
-
-                  <div class="form__personal-checkbox-wrapper">
-                    <label>
-                      <input type="checkbox" name="personal-data" required checked>
-                      <span class="form__checkbox-mark"></span>
-                      <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-                    </label>
-                  </div>
-
-                  <button class="button form__button" type="submit">Задать вопрос</button>
-                </div>
-              </form>
+          <div class="container form__container">
+            <div class="form__image-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/paper-airplane.webp 1x, img/paper-airplane@2x.webp 2x">
+                <img src="img/paper-airplane.png" width="510" height="285" alt="Стилизованный бумажный самолетик, символизирующий отправку данных."
+                srcset="img/paper-airplane@2x.png 2x">
+              </picture>
             </div>
+
+            <form action="https://echo.htmlacademy.ru/" method="get">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+
+              <div class="form__inputs-wrapper">
+                <label>
+                  <input type="text" name="name" id="name" placeholder="Имя" minlength="1" required>
+                  <span>Имя</span>
+                </label>
+
+                <label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  <span>Телефон</span>
+                </label>
+
+                <div class="form__wide-input-wrapper">
+                  <label>
+                    <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+                    <span>Ваш вопрос</span>
+                  </label>
+                </div>
+
+                <div class="form__personal-checkbox-wrapper">
+                  <label>
+                    <input type="checkbox" name="personal-data" required checked>
+                    <span class="form__checkbox-mark"></span>
+                    <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                  </label>
+                </div>
+
+                <button class="button form__button" type="submit">Задать вопрос</button>
+              </div>
+            </form>
           </div>
         </section>
       </main>
 
+
+
       <footer class="footer">
-        <div class="container">
-          <div class="footer__wrapper section-wrapper" data-accordion="parent" data-single="" data-destroy="(max-width: 767px)">
+        <div class="container footer__container" data-accordion="parent" data-single="" data-destroy="(max-width: 767px)">
             <div class="footer__online-contacts">
               <a class="footer__logo logo" href="index.html">
                 <img src="img/svg/logo-desktop.svg" width="215" height="55" alt="Логотип компании Smart Devices.">
@@ -287,7 +282,7 @@
 
             <nav class="footer__nav footer__section nav" data-accordion="element">
               <h2 class="footer__title" data-accordion="button" tabindex="0">Разделы сайта</h2>
-              <div data-accordion="content">
+              <div class="no-js" data-accordion="content">
                 <ul class="nav__list" >
                   <li class="nav__item">
                     <a class="nav__link" href="#">О Компании</a>
@@ -316,7 +311,7 @@
 
             <div class="footer__contacts footer__section" data-accordion="element">
                 <h2 class="footer__title" data-accordion="button">Наш офис</h2>
-              <div class="footer__contacts-wrapper"  data-accordion="content">
+              <div class="footer__contacts-wrapper no-js" data-accordion="content">
                 <address class="footer__address">г. Мытищи, Олимпийский проспект, д.10</address>
                 <ul class="footer__phone-list">
                   <li class="footer__phone-item">
@@ -331,7 +326,6 @@
                 </ul>
               </div>
             </div>
-          </div>
         </div>
       </footer>
     </div>
@@ -341,7 +335,7 @@
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content form form--modal">
-          <div class="form__wrapper form__wrapper--modal">
+          <div class="form__container form__container--modal">
             <form action="https://echo.htmlacademy.ru/" method="get">
               <h2>Закажите звонок</h2>
               <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>

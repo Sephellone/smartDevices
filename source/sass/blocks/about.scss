@@ -1,22 +1,31 @@
-.about__wrapper {
+.about {
+  padding-bottom: 70px;
+
+  @include vp-1023 {
+    padding-bottom: 80px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 79px;
+  }
+}
+
+.about__container {
   position: relative;
-  padding: 0 0 123px 250px;
+  padding-left: 290px;
+  padding-bottom: 53px;
   color: $color-black-pearl;
   overflow: hidden;
 
   @include vp-1023 {
-    padding: 0 15px 81px 200px;
-  }
-
-  @include vp-767 {
-    padding: 0 9px 79px 9px;
+    padding-left: 225px;
   }
 
   &::before {
     content: "2022";
     position: absolute;
     top: 52px;
-    left: -75px;
+    left: -35px;
     display: block;
     font-family: $ff-Roboto-Condensed;
     font-style: normal;
@@ -25,22 +34,35 @@
     line-height: 220px;
     letter-spacing: -0.01em;
     color: transparent;
+    background-color: $color-deep-sky-blue;
+    /* stylelint-disable */
     background-image: url("../img/2022-bg-desktop.jpg");
+    background-image: image-set(
+      "../img/2022-bg-desktop.webp" type("image/webp"),
+      "../img/2022-bg-desktop.jpg" type("image/jpeg")
+    );
+    /* stylelint-enable */
     background-repeat: no-repeat;
     background-position: 19% 58%;
     background-size: 488px 586px;
     background-clip: text;
     overflow: hidden;
 
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateZ(0);
 
     @include retina {
+      /* stylelint-disable */
       background-image: url("../img/2022-bg-desktop@2x.jpg");
+      background-image: image-set(
+        "../img/2022-bg-desktop@2x.webp" type("image/webp"),
+        "../img/2022-bg-desktop@2x.jpg" type("image/jpeg")
+        /* stylelint-enable */
+    );
     }
 
     @include vp-1023 {
       top: 60px;
-      left: -54px;
+      left: -30px;
     }
 
     @include vp-767 {

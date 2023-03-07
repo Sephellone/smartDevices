@@ -3,36 +3,36 @@
   top: 0;
   z-index: 3;
   width: 100%;
-  min-height: 120px;
-  background: linear-gradient(180deg, $color-black-pearl 84.9%, rgba($color-black-pearl, 0) 100%);
+  min-height: 105px;
+  background-color: $color-black-pearl;
+  box-shadow: 0 0 10px 7.5px $color-black-pearl;
   color: $color-alice-blue-text;
 
   @include vp-1023 {
     position: relative;
-    top: 0;
-    left: 0;
-    min-height: 100px;
+    min-height: 88px;
   }
 
   @include vp-767 {
-    min-height: 70px;
+    min-height: 60px;
+    box-shadow: 0 0 7px 5px $color-black-pearl;
   }
 }
 
-.header__wrapper {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-right: 60px;
+  padding-right: 100px;
   padding-top: 30px;
 
   @include vp-1023 {
-    max-width: none;
-    padding: 10px 30px 0 25px;
+    padding-top: 10px;
+    padding-right: 53px;
   }
 
   @include vp-767 {
-    padding: 0 20px 0 10px;
+    padding-right: 36px;
   }
 }
 
