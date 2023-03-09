@@ -24,7 +24,7 @@
     font-size: 36px;
     line-height: 51px;
 
-    & .mobile-only {
+    & span + span {
       display: none;
     }
 
@@ -42,7 +42,7 @@
         display: none;
       }
 
-      & .mobile-only {
+      & span + span {
         display: block;
       }
     }
