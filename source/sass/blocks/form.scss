@@ -389,6 +389,17 @@
         background-color: rgba($color-black-pearl, 0.15);
       }
     }
+
+    &:focus,
+    &:focus-within {
+      color: $color-default-white;
+
+      span:first-of-type {
+        outline: 1px solid rgba($color-black-pearl, 1);
+        outline-offset: 1px;
+        background-color: rgba($color-black-pearl, 0.15);
+      }
+    }
   }
 
   &--modal {

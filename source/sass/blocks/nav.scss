@@ -29,7 +29,7 @@
 
 .nav__item {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   padding: 0;
   break-inside: avoid;
 
@@ -43,7 +43,7 @@
 }
 
 .nav__link {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
   line-height: 22px;

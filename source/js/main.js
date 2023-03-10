@@ -1,10 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {Form} from './modules/form-validate/form';
 import {initModals} from './modules/modals/init-modals';
 import {initAccordions} from './modules/liga-accordions/init-accordion';
 import {initAboutButton} from './modules/liga-accordions/about-accordion-button';
-import {initPhoneMask} from './modules/liga-phone-mask/phone-mask';
 import {initModalFocus} from './modules/modals/modal-focus';
 import {initJsElements} from './utils/no-js';
+import {initAccordionTabindex} from './modules/liga-accordions/accordion-focus';
 
 
 // ---------------------------------
@@ -23,11 +24,14 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initJsElements();
+    const form = new Form();
+    form.init();
+    window.form = form;
     initModalFocus();
     initModals();
     initAboutButton();
-    initPhoneMask();
     initAccordions();
+    initAccordionTabindex();
   });
 });
 
